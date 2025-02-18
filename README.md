@@ -10,7 +10,7 @@ Docker и Docker Compose (рекомендуется)
 
 Установка
 1. Клонируйте репозиторий
-git clone https://github.com/your-repo/email-service.git
+git clone https://github.com/BloodCharry/EmailService.git
 cd email-service
 
 3. Установите зависимости
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 docker-compose up --build
 Приложение будет доступно по адресу: http://localhost:8000 .
 
-Настройка1. Настройте Redis
+Настройте Redis
 Redis используется для Celery. В файле docker-compose.yml убедитесь, что Redis настроен правильно:
 
 1. Настройте SMTP
@@ -35,7 +35,7 @@ DJANGO_DEBUG=True
 
 Использование
 1. Создание email-кампании
-Откройте админ-панель Django: http://localhost:8000/admin или http://localhost:8000/create-campaign/
+Откройте админ-панель Django: http://localhost:8000/admin или модельное окно http://localhost:8000/create-campaign/
 Создайте новую кампанию, указав тему, HTML-шаблон и запланированное время (если нужно).
 
 Пример шаблона:
