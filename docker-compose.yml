@@ -1,0 +1,50 @@
+services:
+  web:
+    build: .
+    command: python email_service/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    networks:
+      - app-network
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    env_file:
+      - .env
+
+  celery:
+    build: .
+    command: sh -c "./wait-for-redis.sh celery -A email_service.celery_app worker --loglevel=info"
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    networks:
+      - app-network
+    environment:
+      - C_FORCE_ROOT=true
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    env_file:
+      - .env
+
+  redis:
+    image: redis:latest
+    command: ["redis-server", "--timeout", "0"]
+    ports:
+      - "6379:6379"
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
