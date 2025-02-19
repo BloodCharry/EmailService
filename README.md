@@ -3,10 +3,10 @@
 
 # Для работы приложения вам понадобятся:
 
-<h4>Python 2.7
+<p>Python 2.7
 Django 1.9.9
 Redis (для Celery)
-Docker и Docker Compose (рекомендуется)</h4>
+Docker и Docker Compose (рекомендуется)</p>
 
 # Установка
 1. Клонируйте репозиторий
