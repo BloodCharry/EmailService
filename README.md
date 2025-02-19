@@ -25,10 +25,10 @@ docker-compose up --build
 Создайте файл .env и внесите данные
 
 Для отправки писем настройте SMTP в файле settings.py:
-EMAIL_HOST_USER = 'your-email@example.com'
-EMAIL_HOST_PASSWORD = 'your-password'
-SECRET_KEY = 'your-django-secretkey'
-DJANGO_DEBUG=True
+ EMAIL_HOST_USER = 'your-email@example.com'
+ EMAIL_HOST_PASSWORD = 'your-password'
+ SECRET_KEY = 'your-django-secretkey'
+ DJANGO_DEBUG=True
 
 Использование
 1. Создание email-кампании
