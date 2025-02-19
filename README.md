@@ -1,14 +1,14 @@
-Email Service
+<h1>Email Service</h1>
 Это приложение позволяет создавать email-кампании, отправлять письма подписчикам и отслеживать их открытие.
 
-Для работы приложения вам понадобятся:
+# Для работы приложения вам понадобятся:
 
-Python 2.7
+<h4>Python 2.7
 Django 1.9.9
 Redis (для Celery)
-Docker и Docker Compose (рекомендуется)
+Docker и Docker Compose (рекомендуется)</h4>
 
-Установка
+# Установка
 1. Клонируйте репозиторий
 git clone https://github.com/BloodCharry/EmailService.git
 cd email-service
