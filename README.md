@@ -35,7 +35,7 @@ cd email-service
 <h4>Откройте админ-панель Django: 'http://localhost:8000/admin' или модельное окно 'http://localhost:8000/create-campaign/'</h4>
 <h4>Создайте новую кампанию, указав тему, HTML-шаблон и запланированное время (если нужно).</h4>
 
-# Пример шаблона:
+Пример шаблона:
 <p>Hello {{ first_name }} {{ last_name }},</p>
 <p>This is a test email!</p>
 <img src="http://localhost:8000/track-open/{{ subscriber_id }}/" alt="" style="display:none;" />
