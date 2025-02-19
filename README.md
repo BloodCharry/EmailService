@@ -10,7 +10,7 @@
 
 # Установка
 <h4>Клонируйте репозиторий</h4>
-<h4>git clone src='https://github.com/BloodCharry/EmailService.git'</h4>
+<h4>git clone 'https://github.com/BloodCharry/EmailService.git'</h4>
 cd email-service
 
 3. Установите зависимости
