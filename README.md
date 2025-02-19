@@ -21,9 +21,6 @@ pip install -r requirements.txt
 docker-compose up --build
 Приложение будет доступно по адресу: http://localhost:8000 .
 
-Настройте Redis
-Redis используется для Celery. В файле docker-compose.yml убедитесь, что Redis настроен правильно:
-
 1. Настройте SMTP
 Создайте файл .env и внесите данные
 
