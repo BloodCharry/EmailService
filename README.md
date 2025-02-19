@@ -9,8 +9,8 @@
 <h4>Docker и Docker Compose (рекомендуется)</h4>
 
 # Установка
-1. Клонируйте репозиторий
-git clone https://github.com/BloodCharry/EmailService.git
+<h4>Клонируйте репозиторий</h4>
+<h4>git clone src='https://github.com/BloodCharry/EmailService.git'</h4>
 cd email-service
 
 3. Установите зависимости
