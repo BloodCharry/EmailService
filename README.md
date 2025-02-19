@@ -12,16 +12,17 @@
 ## Установка
 
 ### Клонируйте репозиторий:
-```bash
+```
 git clone https://github.com/BloodCharry/EmailService.git
 cd email-service
+```
 
-Установите зависимости:
-Если вы используете Docker, зависимости будут установлены автоматически. Если нет, выполните:
-pip install -r requirements.txt
+## Установите зависимости:
+### Если вы используете Docker, зависимости будут установлены автоматически. Если нет, выполните:
+## pip install -r requirements.txt
 
 Запустите контейнеры Docker:
-```bash
+```
 docker-compose up --build
 ```
 
